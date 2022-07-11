@@ -23,24 +23,31 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
 # this should print: true
+puts "Is number_teachers greater than number_students?", number_teachers < number_students
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
 # this should print: false
+puts "Is number_teachers equal to string_teachers?", number_teachers == string_teachers
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
 # this should print: true
+puts "Is number_teachers not equal to number_students?", number_teachers != number_students
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
 # this should print: true
+puts "Is number_students greater than or equal to 20?", number_students >= 20
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
 # this should print: false
+puts "Is number_students greater than or equal to 21?", number_students >= 21
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
 # this should print: true
+puts "Is number_students less than or equal to 20?", number_students <= 20
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
 # this should print: true
+puts "Is number_students less than or equal to 21?", number_students <= 21
 
 
 #-------------------
@@ -53,21 +60,21 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # Make sure YOU can explain it that way!
 
 puts 4 < 9
-#YOU DO: Explain.
+#Prints true because 4 is less than 9
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# YOU DO: prints false because books = 3 and 3 is NOT less than 4
 
 friends = 6
 siblings = 2
 puts friends > siblings
-# YOU DO: Explain.
+# YOU DO: prints true because there are more friends than siblings (6>2)
 
 attendees = 9
 meals = 8
 puts attendees != meals
-# YOU DO: Explain.
+# YOU DO: prints true because the number of attendees (9) is not equal to the number of meals (8)
 
 
 #-------------------
@@ -90,15 +97,17 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts "Does the dog love to play and love treats?", loves_to_play && loves_treats #true
 
 # Determine if the dog loves to play and loves the dog park
-
+puts "Does teh dog love to play and love the dog park?", loves_to_play && loves_dog_park #false
 
 # Determine if the dog loves to play or loves the dog park
-
+puts "Does the dog love to play or love the dog park?", loves_to_play || loves_dog_park #true
 
 # Determine if the dog loves to play and is a puppy
+puts "Does the dog love to play and is it a puppy?", loves_to_play && age<= 2 #true
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: Dogs are considered puppies for up to 2 years, depending on breed, so
+# a dog that is less than or equal to 2 years old would be a puppy.
